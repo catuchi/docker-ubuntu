@@ -5,7 +5,7 @@ FROM httpd:2.4
 WORKDIR /usr/local/apache2/htdocs/
 
 # Copy the website files into the container
-COPY . .
+COPY /files .
 
 # Make port 80 available to the world outside this container
 EXPOSE 80
